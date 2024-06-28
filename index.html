@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Montecarlo PI</title>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="app.js" type="module" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="range-container">
+      <p>Numero de puntos: <span id="num-puntos">100</span></p>
+      <input type="range" name="range" id="range" value="100" min="100" max="5000">
+      <button id="calculate">Calcular</button>
+    </div>
+    <div id="grafic-container">
+      <div id="grafic"></div>
+    </div>
+  </main>
+</body>
+
+</html>
