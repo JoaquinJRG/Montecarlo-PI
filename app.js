@@ -2,6 +2,11 @@ const grafic = document.getElementById("grafic")
 const range = document.getElementById("range")
 const numPuntos = document.getElementById("num-puntos")
 const calculate = document.getElementById("calculate")
+const pi = document.getElementById("pi")
+const total = document.getElementById("total-dots")
+const blueDots = document.getElementById("blue-dots")
+
+
 
 range.addEventListener("input", () => {
   numPuntos.innerText = range.value
@@ -78,5 +83,8 @@ calculate.addEventListener("click", () => {
 
   }
 
+  total.innerHTML = totalDots
+  blueDots.innerHTML = insideDots
+  pi.innerText = 4 * (insideDots / totalDots)
 
 })

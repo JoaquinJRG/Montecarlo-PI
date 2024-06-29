@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="math-pi.svg" type="image/svg">
   <title>Montecarlo PI</title>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="app.js" type="module" defer></script>
@@ -13,7 +14,14 @@
 <body>
   <main>
     <div id="range-container">
-      <p>Numero de puntos: <span id="num-puntos">100</span></p>
+      <div>
+        <p>P. dentro = <span id="blue-dots"></span></p>
+        <p>P. total = <span id="total-dots"></span></p>
+      </div>
+      <div>
+        <p>π &asymp; 4 * P. dentro / P. total = <span id="pi"> </span> </p>
+      </div>
+      <p>Número de puntos: <span id="num-puntos">100</span></p>
       <input type="range" name="range" id="range" value="100" min="100" max="5000">
       <button id="calculate">Calcular</button>
     </div>
